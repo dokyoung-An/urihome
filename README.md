@@ -8,6 +8,7 @@
 - 카테고리 버튼 클릭 시 아이템 리스트 표시/숨김
 - 아이템 클릭 시 외부 링크로 이동
 - iframe으로 쉽게 다른 웹사이트에 삽입 가능
+- 반응형 디자인 (모바일: 393px, PC: 500px)
 
 ## 파일 구조
 
@@ -23,8 +24,13 @@
 2. 원하는 웹페이지에 다음 코드를 추가합니다:
 
 ```html
-<iframe src="경로/index.html" allowtransparency="true" scrolling="no" style="width: 100%; max-width: 450px; height: 100vh; border: none; background-color: transparent;"></iframe>
+<iframe src="경로/index.html" allowtransparency="true" scrolling="no" style="width: 100%; max-width: 500px; height: 100vh; border: none; background-color: transparent;"></iframe>
 ```
+
+## 반응형 동작
+
+- 모바일 환경 (480px 이하): 최대 너비 393px
+- PC 환경: 최대 너비 500px
 
 ## 커스터마이징
 

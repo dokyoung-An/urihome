@@ -31,7 +31,7 @@
     .iframe-container {
       position: relative;
       width: 100%;
-      max-width: 450px;
+      max-width: 500px;
       height: 500px;
       margin: 0 auto;
       background-image: url('images/탄성.png');
@@ -48,6 +48,12 @@
       height: 100%;
       border: none;
       background-color: transparent;
+    }
+    
+    @media screen and (max-width: 480px) {
+      .iframe-container {
+        max-width: 393px;
+      }
     }
   </style>
 </head>
