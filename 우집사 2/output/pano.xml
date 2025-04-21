@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panorama apprev="20986" id="node1" hassounds="0" appversion="7.1.8">
+  <input leveltilesize="510" levelbias="0.400" overlap="1" levelingpitch="0" width="4409" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" levelbiashidpi="1.000" height="4409">
+    <level preload="0" predecode="0" width="4409" height="4409"/>
+    <level preload="0" predecode="0" width="2204" height="2204"/>
+    <level preload="0" predecode="0" width="1102" height="1102"/>
+    <level preload="0" predecode="0" width="551" height="551"/>
+    <level preload="1" predecode="1" width="275" height="275"/>
+    <preview strip="1" color="0x808080"/>
+  </input>
+  <view fovmode="2" pannorth="0">
+    <start tilt="0" projection="4" pan="0" fov="100"/>
+    <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+    <min tilt="-90" fovpixel="2" pan="0"/>
+    <max tilt="90" fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" fov="140"/>
+  </view>
+  <userdata tags="84A" heading="0" nodeid="node1" info="" author="" datetime="2017-09-24 오후 10:35" latitude="" customnodeid="" description="" source="" comment="" longitude="" copyright="" title="거실"/>
+  <hotspots wordwrap="1" smoothmovement="0" width="180" height="20">
+    <label backgroundcolor="0xffffff" bordercolor="0x000000" wordwrap="1" background="1" width="180" enabled="1" borderradius="1" textcolor="0x000000" border="1" textalpha="1" backgroundalpha="1" borderalpha="1" height="20"/>
+    <polystyle backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" borderalpha="1" bordercolor="0x0000ff"/>
+  </hotspots>
+  <media/>
+  <transition zoomout="0" type="crossdissolve" blendtime="1" blendcolor="0x000000" zoomfov="40" enabled="1" delay="none" zoomin="0" softedge="0" zoomspeed="2" zoomoutpause="1" zoomafteroutfov="40" zoomafterinfov="140"/>
+  <animation syncanimationwithvideo="0" clipsrandom="0" animsequence="Animation01" useinautorotation="0"/>
+  <control dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" simulatemass="1" lockedkeyboard="0" contextprojections="0" rubberband="0" zoomcentercursor="1" lockedmouse="0" lockedwheel="0" invertwheel="0" invertcontrol="1" contextfullscreen="1" hideabout="0" contextvr="1" speedwheel="1"/>
+  <projectuserdata description="" tags="" author="" comment="" copyright="" title=""/>
+</panorama>
