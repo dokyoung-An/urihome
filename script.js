@@ -99,4 +99,12 @@ document.addEventListener('DOMContentLoaded', function() {
       currentPage = 'main';
     }
   });
+
+  document.querySelectorAll('.ad-item-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      // 새 창에서 열기
+      window.open('https://example.com', '_blank');
+    });
+  });
 }); 
