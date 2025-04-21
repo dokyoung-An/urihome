@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.8/20986
 // Filename: ??? - black.ggsk
-// Generated 2025-04-21T20:05:48
+// Generated 2025-04-21T20:11:11
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_pcfooter', 2, false, { ignoreInState: 0  });
@@ -7224,7 +7224,7 @@ function pano2vrSkin(player,base) {
 			player.setVariableValue('vis_pcad', !player.getVariableValue('vis_pcad'));
 				me._pc_5.ggUpdateText=function() {
 					var params = [];
-					var hs = player._("<iframe src=\"https:\/\/dokyoung-an.github.io\/uzipsa_inpano\/\" width=\"100%\" height=\"100%\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\"  ><\/iframe>", params);
+					var hs = player._("<iframe src=\"https:\/\/dokyoung-an.github.io\/uzipsa_inpano\/\" width=\"100%\" height=\"100%\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" frameborder= \"0\"  ><\/iframe>", params);
 					if (hs!=this.ggText) {
 						this.ggText=hs;
 						this.ggTextDiv.innerHTML=hs;
