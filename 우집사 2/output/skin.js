@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.8/20986
 // Filename: ??? - black.ggsk
-// Generated 2025-04-21T19:48:06
+// Generated 2025-04-21T20:05:48
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_pcfooter', 2, false, { ignoreInState: 0  });
@@ -4379,7 +4379,7 @@ function pano2vrSkin(player,base) {
 		el=me.__pc1=document.createElement('div');
 		el.ggId="\uac00\uaca9\uc815\ubcf4_pc";
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
-		el.ggVisible=false;
+		el.ggVisible=true;
 		el.className="ggskin ggskin_container ";
 		el.ggType='container';
 		hs ='';
@@ -4388,7 +4388,7 @@ function pano2vrSkin(player,base) {
 		hs+='left : -500px;';
 		hs+='position : absolute;';
 		hs+='top : 70px;';
-		hs+='visibility : hidden;';
+		hs+='visibility : inherit;';
 		hs+='width : 500px;';
 		hs+='pointer-events:none;';
 		el.setAttribute('style',hs);
@@ -4443,8 +4443,8 @@ function pano2vrSkin(player,base) {
 					me.__pc1.ggVisible=false;
 				}
 				else {
-					me.__pc1.style.visibility="hidden";
-					me.__pc1.ggVisible=false;
+					me.__pc1.style.visibility=(Number(me.__pc1.style.opacity)>0||!me.__pc1.style.opacity)?'inherit':'hidden';
+					me.__pc1.ggVisible=true;
 				}
 			}
 		}
@@ -4816,7 +4816,7 @@ function pano2vrSkin(player,base) {
 		el=me._pc_11=document.createElement('div');
 		el.ggId="pc-\uacf5\uac04\uc774\ub3d9_\uba54\ub274_1";
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
-		el.ggVisible=false;
+		el.ggVisible=true;
 		el.className="ggskin ggskin_container ";
 		el.ggType='container';
 		hs ='';
@@ -4825,7 +4825,7 @@ function pano2vrSkin(player,base) {
 		hs+='left : -500px;';
 		hs+='position : absolute;';
 		hs+='top : 70px;';
-		hs+='visibility : hidden;';
+		hs+='visibility : inherit;';
 		hs+='width : 500px;';
 		hs+='pointer-events:none;';
 		el.setAttribute('style',hs);
@@ -4880,8 +4880,8 @@ function pano2vrSkin(player,base) {
 					me._pc_11.ggVisible=false;
 				}
 				else {
-					me._pc_11.style.visibility="hidden";
-					me._pc_11.ggVisible=false;
+					me._pc_11.style.visibility=(Number(me._pc_11.style.opacity)>0||!me._pc_11.style.opacity)?'inherit':'hidden';
+					me._pc_11.ggVisible=true;
 				}
 			}
 		}
@@ -7517,7 +7517,7 @@ function pano2vrSkin(player,base) {
 		el.className="ggskin ggskin_rectangle ";
 		el.ggType='rectangle';
 		hs ='';
-		hs+='background : rgba(255,255,255,0.882353);';
+		hs+='background : #ffffff;';
 		hs+='border : 0px solid #000000;';
 		hs+='border-radius : 0px 15px 15px 0px;';
 		hs+='height : 100%;';
