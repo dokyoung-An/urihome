@@ -29,17 +29,7 @@ body {
   flex-direction: column;
 }
 
-.ad-container::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: 0;
-  right: 0;
-  height: 28px;
-  background-color: white;
-  border-radius: 100% 100% 0 0 / 100% 100% 0 0;
-  z-index: 5;
-}
+
 
 
 
