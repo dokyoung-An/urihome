@@ -18,19 +18,14 @@ body {
 .ad-container {
   position: relative;
   width: 100%;
-  max-width: 500px;
   height:100vh;
   background-color: white;
   border-radius: 0 0 0 0;
   padding: 0;
   overflow: hidden;
-  
   display: flex;
   flex-direction: column;
 }
-
-
-
 
 
 .header-left {
@@ -51,9 +46,6 @@ body {
 .back-btn.show {
   display: block;
 }
-
-
-
 
 
 .categories {
