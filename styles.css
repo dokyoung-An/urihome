@@ -61,7 +61,7 @@ body {
 
 
 .categories {
-  padding: 1px;
+  padding: 5px 2px;
   background-color: white;
   flex: 1;
   overflow-y: auto;
