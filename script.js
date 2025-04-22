@@ -48,10 +48,15 @@ document.addEventListener('DOMContentLoaded', function() {
   // 아이템 클릭 이벤트 - 상세 페이지로 이동
   adItems.forEach(item => {
     item.addEventListener('click', function(e) {
+      // 브이쿨_단열필름 또는 안티솔라_단열필름인 경우 이벤트 무시 (링크로 이동)
+      const title = this.querySelector('span').textContent;
+      if (title === '브이쿨_단열필름' || title === '안티솔라_단열필름') {
+        return;
+      }
+      
       e.preventDefault();
       
       // 상품 정보 가져오기
-      const title = this.querySelector('span').textContent;
       const description = this.querySelector('p').textContent;
       const price = this.querySelector('h3').textContent;
       const imgSrc = this.closest('.ad-item').querySelector('.ad-item-image img').src;
@@ -98,13 +103,5 @@ document.addEventListener('DOMContentLoaded', function() {
       // 현재 페이지 상태 업데이트
       currentPage = 'main';
     }
-  });
-
-  document.querySelectorAll('.ad-item-link').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      // 새 창에서 열기
-      window.open('https://example.com', '_blank');
-    });
   });
 }); 
