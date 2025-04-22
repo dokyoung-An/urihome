@@ -48,15 +48,17 @@ document.addEventListener('DOMContentLoaded', function() {
   // 아이템 클릭 이벤트 - 상세 페이지로 이동
   adItems.forEach(item => {
     item.addEventListener('click', function(e) {
-      // 브이쿨_단열필름 또는 안티솔라_단열필름인 경우 이벤트 무시 (링크로 이동)
-      const title = this.querySelector('span').textContent;
-      if (title === '브이쿨_단열필름' || title === '안티솔라_단열필름') {
-        return;
+      // 특정 링크가 있는 경우 처리 안함 (새 창으로 이동)
+      const parentLink = this.closest('.ad-item-link');
+      const href = parentLink.getAttribute('href');
+      if (href && href !== 'javascript:void(0);') {
+        return; // 링크가 있으면 기본 동작 수행 (새 창 열기)
       }
       
       e.preventDefault();
       
       // 상품 정보 가져오기
+      const title = this.querySelector('span').textContent;
       const description = this.querySelector('p').textContent;
       const price = this.querySelector('h3').textContent;
       const imgSrc = this.closest('.ad-item').querySelector('.ad-item-image img').src;
@@ -81,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
       
       // 이전 버튼 보이기
-      backBtn.classList.add('show');
+      if(backBtn) backBtn.classList.add('show');
       
       // 카테고리 숨기고 상세 페이지 보이기
       categories.classList.add('hide');
@@ -93,15 +95,17 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   // 이전 버튼 클릭 이벤트
-  backBtn.addEventListener('click', function() {
-    if (currentPage === 'detail') {
-      // 상세 페이지에서 메인으로 돌아가기
-      categories.classList.remove('hide');
-      detailView.classList.remove('show');
-      backBtn.classList.remove('show');
-      
-      // 현재 페이지 상태 업데이트
-      currentPage = 'main';
-    }
-  });
+  if(backBtn) {
+    backBtn.addEventListener('click', function() {
+      if (currentPage === 'detail') {
+        // 상세 페이지에서 메인으로 돌아가기
+        categories.classList.remove('hide');
+        detailView.classList.remove('show');
+        backBtn.classList.remove('show');
+        
+        // 현재 페이지 상태 업데이트
+        currentPage = 'main';
+      }
+    });
+  }
 }); 
