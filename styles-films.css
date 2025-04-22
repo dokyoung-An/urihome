@@ -84,21 +84,7 @@ body {
 
 /* 짝수 항목의 배경색 설정 */
 .ad-item-link-films:nth-child(even) .ad-item-films {
-  background-color: transparent;
-}
-
-/* 홀수 항목의 ad-item-content-films 배경색 설정 */
-.ad-item-link-films:nth-child(odd) .ad-item-content-films {
-  background-color: transparent;
-  border-radius: 6px;
-  padding: 10px;
-}
-
-/* 짝수 항목의 ad-item-content-films 배경색 설정 */
-.ad-item-link-films:nth-child(even) .ad-item-content-films {
   background-color: #fff;
-  border-radius: 6px;
-  padding: 10px;
 }
 
 .ad-item-films {
