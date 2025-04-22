@@ -168,7 +168,7 @@ body {
 
 /* 홀수 항목의 배경색 설정 */
 .ad-item-link:nth-child(odd) .ad-item {
-  background-color: #ececea;
+  background-color: #f9f9f9;
 }
 
 /* 짝수 항목의 배경색 설정 */
